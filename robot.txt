@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Admin & Login
+Disallow: /admin/
+Disallow: /login/
+
+# Client Private Area
+Disallow: /client-portal/
+Disallow: /account/
+
+# Conversion / Thank You Pages
+Disallow: /thank-you
+Disallow: /form-submitted
+
+# Temporary & Testing Pages
+Disallow: /test/
+Disallow: /staging/
+
+# Sitemap Location
+Sitemap: https://seoexpertinpakistan.com/sitemap.xml
