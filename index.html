@@ -307,9 +307,8 @@
         .cta-dot { width:8px; height:8px; border-radius:50%; background:var(--gold-light); animation:pulse-dot 2s infinite; box-shadow:0 0 10px var(--gold-glow); display:inline-block; vertical-align:middle; }
 
         /* ============ ORIGINAL PAGE STYLES ============ */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+       * { margin: 0; padding: 0; box-sizing: border-box; } 
+          html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; } body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
         .section { padding: 80px 24px; }
         .section-alt { background: var(--bg-alt); }
         .container { max-width: var(--max-width); margin: 0 auto; }
@@ -968,7 +967,7 @@
 </section>
 
     <!-- ─── PLATFORM SECTION ─── -->
-    <section id="platform-optimization" style="padding: 100px 24px; background: #ffffff; font-family: 'Inter', sans-serif;">
+        <section id="platform-optimization" style="padding: 100px 24px; background: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; max-width: 100%;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: stretch; gap: 60px; flex-wrap: wrap;">
             <div style="flex: 1.2; min-width: 320px; display: flex; flex-direction: column; justify-content: center;">
                 <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #0d7377; display: block; margin-bottom: 12px;">ADVANCED PLATFORM SEO</span>
@@ -1353,8 +1352,8 @@
     <section style="padding: 60px 24px; background: #ffffff; font-family: 'Inter', system-ui, sans-serif; max-width: 1200px; margin: 0 auto;">
         <h2 style="font-size: 2.5rem; font-weight: 800; color: #1a1a2e; margin-bottom: 40px; text-align: center;">Get Fast Results With an SEO Expert Nearby </h2>
         <div style="display: flex; gap: 40px; align-items: flex-start;">
-            <div style="flex: 1; background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #e8ecf1;">
-                <svg viewBox="0 0 650 520" style="width: 100%; height: 100%; overflow: visible;">
+                        <div style="flex: 1; background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #e8ecf1; overflow: hidden;">
+                <svg viewBox="0 0 650 520" style="width: 100%; height: auto; display: block;">
                     <path class="prov-path" d="M 158 502 L 180 508 L 208 518 L 222 506 L 216 480 L 210 440 L 230 400 L 254 366 L 280 340 L 314 306 L 360 274 L 366 244 L 354 212 L 334 186 L 350 154 L 368 126 L 398 94 L 394 62 L 360 30 L 322 22 L 286 42 L 258 66 L 244 88 L 222 110 L 206 142 L 180 186 L 164 220 L 140 252 L 102 284 L 78 322 L 60 364 L 38 412 L 14 456 L 24 472 L 56 476 L 90 478 L 122 492 L 140 500 Z" />
                     <path class="route-line" d="M 165 495 L 250 320 L 130 320 M 250 320 L 310 260 L 370 280 M 310 260 L 300 190 L 295 150 M 230 160 L 290 190" />
                     <circle onclick="updateLoc(0)" class="map-point active-city" cx="165" cy="495" r="6"/><text x="180" y="500" class="map-label active-label">KARACHI</text>
