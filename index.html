@@ -1564,11 +1564,11 @@
             .v1-faq-card.active { max-height: 350px !important; background: #ffffff !important; border-color: #0d7377 !important; box-shadow: 0 10px 25px rgba(0,0,0,0.02); }
             .v1-faq-card.active .faq-icon { transform: rotate(45deg); display: inline-block; transition: transform 0.2s; }
             
-            /* Mobile Fix to prevent text cutting */
+            /* Mobile Fix to prevent text cutting and balance spacing */
             @media (max-width: 768px) {
-                .v1-faq-card { max-height: 120px !important; } /* THIS LINE FIXES THE CUTTING ISSUE */
-                .v1-faq-card > div:first-child { font-size: 0.95rem !important; padding: 18px 16px !important; align-items: flex-start !important; }
-                .v1-faq-card > div:last-child { padding: 0 16px 20px 16px !important; font-size: 0.9rem !important; }
+                .v1-faq-card { max-height: 120px !important; } 
+                .v1-faq-card > div:first-child { font-size: 0.95rem !important; padding: 16px !important; align-items: center !important; }
+                .v1-faq-card > div:last-child { padding: 0 16px 16px 16px !important; font-size: 0.9rem !important; }
             }
         </style>
 
