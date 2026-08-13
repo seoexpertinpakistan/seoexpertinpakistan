@@ -915,7 +915,7 @@
         const steps = [ {t:"Business Review",d:"The business, its target area, current Google Business Profile status, and key competitors are reviewed before any strategy is finalized."},{t:"Profile Audit",d:"Every element of the current listing is documented. The GMB profile setup audit covers categories, descriptions, photos, reviews, and recent activity."},{t:"Competitor Mapping",d:"Top local competitors are reviewed to see what works well. This helps guide the gmb optimization service in the right direction from the start."},{t:"Keyword Planning",d:"Each section of Google My Business (GMB) profiles is planned with local keywords, supported by advanced GMB optimization tools for better optimization."},{t:"Category Review",d:"Category selection is reviewed for better accuracy. Google business profile optimization services support a well-optimized GMB listing with stronger local search relevance."},{t:"Content Creation",d:"Business descriptions and service listings are written or rewritten with natural keyword use. This is core to any effective advanced GMB optimization plan."},{t:"Photo Upload",d:"Optimized images are uploaded following Google's specifications. Fresh and relevant images help strengthen the results of a google my business optimization service."},{t:"Post Publishing",d:"Google Posts are consistently published as part of GMB management, using GMB Optimization strategies from GMB Insights Analysis Report."},{t:"Q&A Setup",d:"Relevant questions are pre-populated and answered in the profile. This gmb page optimization step builds trust with customers before they even make contact."},{t:"Citation Audit",d:"All third-party directory listings are checked against the correct business data. Inconsistencies here quietly damage gmb ranking service results."},{t:"Citation Corrections",d:"Citation errors are fixed across platforms through Google My Business SEO service, strengthening GMB Advanced Features and overall google business optimization performance."},{t:"Review Responses",d:"Every existing review receives a professional response. This improves trust and supports Existing GMB Profile growth along with stronger competitor GMB rankings."},{t:"Review Generation",d:"A system is used to generate reviews naturally as part of ongoing strategy. This supports multiple GMB listings and is included in a comprehensive GMB optimization service."},{t:"Monthly Optimization",d:"The profile is reviewed and updated each month. Affordable GMB management helps maintain visibility, improve performance, and keep the profile active over time."} ];
         const orbit = document.getElementById('v9-orbit');
         const core = document.getElementById('v9-core');
-        const radius = 200;
+        const radius = Math.min(200, window.innerWidth * 0.35);
         
         steps.forEach((s, i) => {
             const angle = (i / 14) * 2 * Math.PI;
@@ -944,9 +944,23 @@
             <span style="font-size: var(--label-size); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--teal); display: block; margin-bottom: 12px;">Case Studies</span>
             <h2 style="font-size: var(--h2-size); font-weight: 800; color: var(--text); letter-spacing: -0.6px; line-height: 1.25;">Real Results</h2>
         </div>
-        <div id="v6-case-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;"></div>
-    </div>
-    <script>
+                    <div id="v6-case-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;"></div>
+        </div>
+        
+        <style>
+            /* MOBILE FIX FOR CASE STUDIES */
+            @media (max-width: 600px) {
+                #v6-case-grid { 
+                    grid-template-columns: 1fr !important; /* Stacks the cards vertically on mobile */
+                }
+                .v6-card { 
+                    max-height: none !important; /* Removes the 80px height limit so text isn't cut */
+                    overflow: visible !important; 
+                }
+            }
+        </style>
+
+        <script>
         (function() {
             const caseData = [
                 { t: "Driving GMB Optimization Results for a Local Plumber", s: "GMB Optimization Service", m1: "21% Increase in Map Views from Target City", m2: "61% Increase in Search-Driven Calls", c: "var(--teal)" },
