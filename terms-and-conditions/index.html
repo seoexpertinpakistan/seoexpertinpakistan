@@ -236,10 +236,10 @@
         @keyframes pulse-dot { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.8); opacity:0.5; } }
         .cta-dot { width:8px; height:8px; border-radius:50%; background:var(--gold-light); animation:pulse-dot 2s infinite; box-shadow:0 0 10px var(--gold-glow); display:inline-block; vertical-align:middle; }
 
-        /* ============ ORIGINAL PAGE STYLES ============ */
+                /* ============ ORIGINAL PAGE STYLES ============ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; max-width: 100%; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
         .section { padding: 80px 24px; }
         .section-alt { background: var(--bg-alt); }
         .container { max-width: var(--max-width); margin: 0 auto; }
