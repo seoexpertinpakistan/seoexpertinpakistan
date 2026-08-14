@@ -648,16 +648,16 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
 </section>
 
 <!-- ─── TEXT & CONTACT SECTION 9 ─── -->
-<section style="padding: 100px 20px; background: #ffffff; font-family: 'Inter', sans-serif;">
+<section class="pp-contact-section" style="padding: 100px 20px; background: #ffffff; font-family: 'Inter', sans-serif;">
     <div class="container reveal" style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <h2 style="color: #1a1a2e; font-size: 45px; font-weight: 800; line-height: 1.1; margin: 0 0 25px;">Contact Information</h2>
-        <p style="color: #555; font-size: 18px; line-height: 1.8; margin: 0 0 40px;">If you have any questions about this Privacy Policy or your privacy rights, please contact us. We are dedicated to resolving any concerns you may have regarding your data security or user information on our site.</p>
+        <h2 class="pp-contact-title" style="color: #1a1a2e; font-size: 45px; font-weight: 800; line-height: 1.1; margin: 0 0 25px;">Contact Information</h2>
+        <p class="pp-contact-desc" style="color: #555; font-size: 18px; line-height: 1.8; margin: 0 0 40px;">If you have any questions about this Privacy Policy or your privacy rights, please contact us. We are dedicated to resolving any concerns you may have regarding your data security or user information on our site.</p>
         
-        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        <div class="pp-contact-flex" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
             <a href="mailto:contact@seoexpertinpakistan.com" class="pp-card" style="text-decoration: none; background: #f0f4f8; padding: 30px 40px; border-radius: 15px; border: 1px solid #e8ecf1; min-width: 280px;">
                 <div class="pp-icon" style="width: 50px; height: 50px; background: #0d7377; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; margin: 0 auto 15px;">✉️</div>
                 <p style="font-size: 14px; color: #777; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 0 0 8px;">Email</p>
-                <p style="font-size: 18px; line-height: 1.8; color: #1a1a2e; font-weight: 700; margin: 0;">contact@seoexpertinpakistan.com</p>
+                <p class="pp-email-text" style="font-size: 18px; line-height: 1.8; color: #1a1a2e; font-weight: 700; margin: 0;">contact@seoexpertinpakistan.com</p>
             </a>
             <div class="pp-card" style="background: #f0f4f8; padding: 30px 40px; border-radius: 15px; border: 1px solid #e8ecf1; min-width: 280px;">
                 <div class="pp-icon" style="width: 50px; height: 50px; background: #0d7377; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; margin: 0 auto 15px;">🏢</div>
@@ -666,9 +666,35 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             </div>
         </div>
     </div>
+
+    <style>
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) {
+            .pp-contact-section {
+                padding: 60px 16px !important; /* Reduces side padding to give more space */
+            }
+            .pp-contact-title {
+                font-size: 2rem !important; /* Shrinks the 45px font for mobile screens */
+                margin-bottom: 15px !important;
+            }
+            .pp-contact-desc {
+                font-size: 1rem !important;
+                margin-bottom: 30px !important;
+            }
+            .pp-contact-flex {
+                flex-direction: column !important; /* Stacks the boxes vertically */
+                gap: 20px !important;
+            }
+            .pp-card {
+                min-width: 100% !important; /* Forces boxes to take full width */
+                padding: 25px 20px !important; /* Adjusts padding to prevent overflow */
+            }
+            .pp-email-text {
+                word-break: break-word !important; /* CRITICAL: Forces the long email to wrap inside the box */
+            }
+        }
+    </style>
 </section>
-
-
 <!--<!-- ─── CONTACT SECTION ─── -->
 <section style="padding: 100px 20px; background: #f0f4f8; font-family: 'Inter', sans-serif;" id="contact">
     <div class="contact-flex" style="max-width: 1150px; margin: 0 auto; display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
