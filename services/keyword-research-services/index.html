@@ -183,8 +183,8 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: var(--font-family); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
 
         /* ─── SCROLL REVEAL ANIMATIONS ─── */
         .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
@@ -1952,7 +1952,7 @@
     <div style="position:absolute;top:-100px;left:-80px;width:400px;height:400px;background:radial-gradient(circle, rgba(13,115,119,0.07) 0%, transparent 70%);border-radius:50%;pointer-events:none;"></div>
     <div style="position:absolute;bottom:-80px;right:-60px;width:350px;height:350px;background:radial-gradient(circle, rgba(212,168,67,0.06) 0%, transparent 70%);border-radius:50%;pointer-events:none;"></div>
     
-    <style>
+       <style>
         /* Center hero text only on mobile */
         @media (max-width: 950px) {
             .hero-content {
@@ -1961,6 +1961,17 @@
             }
             .hero-btns {
                 justify-content: center !important;
+            }
+            /* HERO INFOGRAPHIC MOBILE FIX */
+            .hero-grid > div:last-child {
+                height: 350px !important; /* Mobile ke liye perfect height */
+                margin-top: 30px;
+            }
+            .hero-grid > div:last-child > div {
+                max-width: 100% !important;
+                width: 90% !important;
+                height: 100% !important;
+                padding: 16px !important;
             }
         }
     </style>
@@ -2077,6 +2088,18 @@
             padding: 80px 24px !important;
         }
     }
+            /* CORE BENEFITS CAROUSEL MOBILE FIX */
+        @media (max-width: 768px) {
+            #carousel-track > div {
+                min-height: auto !important; /* 480px ko hatane ke liye */
+                height: auto !important;
+                padding: 40px 15px !important;
+            }
+            #carousel-track > div > div {
+                padding: 24px !important;
+                max-width: 100% !important;
+            }
+        }
 </style>
 
 <!-- CAROUSEL SECTION -->
@@ -2927,10 +2950,23 @@
             width: 30px; height: 30px; border-radius: 50%; cursor: pointer; 
             font-size: 1.2rem; flex-shrink: 0; margin-left: 15px;
         }
-        /* Mobile adjustment to ensure text doesn't hit the edges */
+                /* Mobile adjustment to ensure text doesn't hit the edges */
         @media (max-width: 600px) {
-            .v18-panel { padding: 15px; }
+            .v18-panel { 
+                padding: 20px 15px 40px 15px !important; 
+                position: relative !important; /* Absolute ko hata kar relative kiya */
+                height: auto !important; /* Fixed height ko auto kiya */
+                min-height: 100% !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+            }
             .v18-header h4 { font-size: 0.95rem !important; }
+            .v18-close {
+                position: absolute !important;
+                top: 10px !important;
+                right: 10px !important;
+                margin-left: 0 !important;
+            }
         }
     </style>
     <div style="max-width: 800px; margin: 0 auto;">
@@ -3110,7 +3146,7 @@
 
  
 
-<!-- ─── CONTACT SECTION ─── -->
+<!--<!-- ─── CONTACT SECTION ─── -->
 <section style="padding: 100px 20px; background: #f0f4f8; font-family: 'Inter', sans-serif;" id="contact">
     <div class="contact-flex" style="max-width: 1150px; margin: 0 auto; display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
         
@@ -3162,6 +3198,43 @@
         .premium-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 40%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transform: skewX(-25deg); animation: shineSweep 4s infinite; z-index: 1; }
         .premium-button:hover { background: #095c5f !important; transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 40px rgba(13,115,119,0.4) !important; }
         .premium-button:active { transform: translateY(-2px) scale(0.98); }
+
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) {
+            #contact {
+                padding: 60px 16px !important; /* Reduces outer padding to give more space */
+            }
+            .contact-flex {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+            .contact-content {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 320px constraint */
+                width: 100% !important;
+                text-align: center !important; /* Centers text for better mobile look */
+            }
+            .contact-content h2 {
+                font-size: 2rem !important; /* Shrinks the massive 45px font */
+                margin-bottom: 15px !important;
+            }
+            .contact-content p {
+                font-size: 1rem !important;
+            }
+            /* Center Phone and Email on mobile */
+            .contact-content > div:last-child > a > p {
+                justify-content: center !important;
+            }
+
+            .contact-form-wrap {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 400px constraint that caused scroll */
+                width: 100% !important;
+                padding: 24px !important; /* Reduces 50px padding so form fields aren't cramped */
+                border-radius: 20px !important;
+                box-shadow: 10px 10px 30px #cbd5e0, -10px -10px 30px #ffffff !important;
+            }
+        }
     </style>
 </section>
 
