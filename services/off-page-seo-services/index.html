@@ -1505,115 +1505,77 @@ body {
 </section>
 
 
- <!-- ─── 2. WHY CLIENTS CHOOSE THIS (STICKY STACK DESIGN) ─── -->
-<section class="reveal-on-scroll revealed" style="background: var(--bg-alt); padding: 100px 24px; border-bottom: 1px solid var(--border);">
-    
-    <style>
-        /* STICKY STACK LAYOUT FOR DESKTOP ONLY */
-        @media (min-width: 993px) {
-            .sticky-layout-wrapper {
-                display: flex;
-                align-items: flex-start;
-                gap: 60px;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            .sticky-left-content {
-                position: sticky;
-                top: 140px; /* Left side ko screen par rokne ke liye */
-                width: 40%;
-                text-align: left; 
-            }
-            .sticky-right-cards {
-                width: 60%;
-                display: flex;
-                flex-direction: column;
-                gap: 60px; /* Cards ke darmiyan fasla */
-                padding-bottom: 80px;
-            }
-            .sticky-card {
-                position: sticky;
-                background: var(--bg);
-                border: 1px solid var(--border);
-                border-radius: var(--radius-md);
-                padding: 40px;
-                box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-                transition: transform 0.3s;
-            }
-            /* Har card ko thora neeche rokne ke liye taake overlapping effect aaye */
-            .sticky-card:nth-child(1) { top: 120px; z-index: 1; }
-            .sticky-card:nth-child(2) { top: 140px; z-index: 2; }
-            .sticky-card:nth-child(3) { top: 160px; z-index: 3; }
-            .sticky-card:nth-child(4) { top: 180px; z-index: 4; }
-        }
-
-        /* MOBILE VIEW - Normal (Jaisa apko chahiye tha) */
-        @media (max-width: 992px) {
-            .sticky-layout-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 40px;
-                max-width: 100%;
-            }
-            .sticky-left-content {
-                text-align: center; /* Mobile par text center rahega */
-            }
-            .sticky-right-cards {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-            .sticky-card {
-                background: var(--bg);
-                border: 1px solid var(--border);
-                border-radius: var(--radius-md);
-                padding: 32px;
-                box-shadow: var(--shadow-sm);
-                position: relative; /* Mobile par sticky khatam kar diya */
-                top: 0 !important;
-            }
-        }
-    </style>
-
-    <div class="sticky-layout-wrapper">
-        
-        <!-- LEFT SIDE (Desktop par ruki rahegi) -->
-        <div class="sticky-left-content">
-            <span style="font-size: var(--label-size); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--teal); display: block; margin-bottom: 12px;">Our Approach</span>
-            <h2 style="font-size: var(--h2-size); font-weight: 800; color: var(--text); letter-spacing: -0.6px; line-height: 1.25; margin-bottom: 16px;">Why Clients Choose This Keyword Research Service in Pakistan</h2>
-            <p style="font-size: var(--p-size); line-height: var(--p-line-height); color: var(--text-soft); font-weight: 400; margin: 0;">Not all keyword research services in Pakistan understand local demand. I focus on high-profit keywords, apply Standard keyword tools, and build a practical SEO Keyword Strategy Pakistan based on real market behavior.</p>
-        </div>
-
-        <!-- RIGHT SIDE (Desktop par cards overlap honge) -->
-        <div class="sticky-right-cards">
+ <!-- ─── 5. KEY ADVANTAGES SECTION  ─── -->
+<section class="section" style="background-color: var(--bg); padding: 100px 24px; overflow: visible;">
+    <div class="container" style="max-width: var(--max-width); margin: 0 auto;">
+        <div class="responsive-grid-2" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start;">
             
-            <!-- Card 1 -->
-            <div class="sticky-card">
-                <h3 style="font-size: var(--h3-size); font-weight: 700; color: var(--teal); margin-bottom: 12px;">✓ Verified Data Only</h3>
-                <p style="font-size: var(--p-size); line-height: var(--p-line-height); color: var(--text-soft); margin: 0; font-weight: 400;">Each keyword is reviewed for volume, difficulty, and intent using a structured keyword research approach. A reliable seo keyword tool helps confirm keyword performance before final selection for better accuracy. This ensures that every term we target is backed by hard data rather than guesswork.</p>
+            <div style="position: sticky; top: 120px; z-index: 10;">
+                <span class="section-label" style="display: inline-block; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 12px;">The Strategic Difference</span>
+                <h2 class="section-title" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; letter-spacing: -0.6px; line-height: 1.25; margin-bottom: 16px; color: var(--text);">
+                    Why Our Off-Page SEO Strategy Delivers Real Results
+                </h2>
+                <p style="font-size: 1rem; line-height: 1.65; color: var(--text-light); font-weight: 400; margin: 0;">
+                    Real strategic off-page services show up in the data. Here is what we track and why it matters.
+                </p>
             </div>
 
-            <!-- Card 2 -->
-            <div class="sticky-card">
-                <h3 style="font-size: var(--h3-size); font-weight: 700; color: var(--teal); margin-bottom: 12px;">✓ Pakistan Market Analysis</h3>
-                <p style="font-size: var(--p-size); line-height: var(--p-line-height); color: var(--text-soft); margin: 0; font-weight: 400;">I analyze the Pakistan market with in-depth keyword analysis, filter low-value keywords, and target high-performing keywords for best keyword research results. Understanding the local search ecosystem is critical for businesses operating here.</p>
+            <div style="display: flex; flex-direction: column; gap: 50px; padding-bottom: 150px;">
+                <!-- Card 1 -->
+                <div class="hover-lift" style="position: sticky; top: 130px; z-index: 1; border: 1px solid var(--border); padding: 28px; border-radius: var(--radius); background-color: #f1fcfc; box-shadow: var(--card-shadow); color: var(--text);">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                        ✔ 100% Manual Work
+                    </h3>
+                    <p style="font-size: 1rem; line-height: 1.65; color: var(--text-light); font-weight: 400; margin: 0;">
+                        Every outreach, every placement, and every mention is done by hand using advanced off page seo. No bots. No bulk tools. No shortcuts that put your site at risk.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="hover-lift" style="position: sticky; top: 160px; z-index: 2; border: 1px solid var(--border); padding: 28px; border-radius: var(--radius); background-color: var(--accent-light); box-shadow: var(--card-shadow); color: var(--text);">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                        ✔ Quality Over Volume
+                    </h3>
+                    <p style="font-size: 1rem; line-height: 1.65; color: var(--text-light); font-weight: 400; margin: 0;">
+                        We target sites with real traffic and genuine editorial standards. One strong placement from a relevant source beats a hundred low-quality ones every time, and supports off page search engine optimization naturally.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="hover-lift" style="position: sticky; top: 190px; z-index: 3; border: 1px solid var(--border); padding: 28px; border-radius: var(--radius); background-color: #b0e6e6; box-shadow: var(--card-shadow); color: var(--text);">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                        ✔ Transparent Reporting
+                    </h3>
+                    <p style="font-size: 1rem; line-height: 1.65; color: var(--text); font-weight: 400; margin: 0;">
+                        You see exactly where your brand appears, what was placed, and how your authority profile grows month over month in your off-page SEO campaign. No unclear metrics.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="hover-lift" style="position: sticky; top: 220px; z-index: 4; border: 1px solid var(--border); padding: 28px; border-radius: var(--radius); background-color: #6fc6c6; box-shadow: var(--card-shadow); color: var(--text);">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                        ✔ Safe for Your Brand
+                    </h3>
+                    <p style="font-size: 1rem; line-height: 1.65; color: var(--text); font-weight: 500; margin: 0;">
+                        Our off-page SEO techniques follow Google's guidelines strictly. We never use private blog networks, paid link schemes, or anything that could trigger a penalty.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="hover-lift" style="position: sticky; top: 250px; z-index: 5; border: none; padding: 28px; border-radius: var(--radius); background-color: var(--accent); box-shadow: var(--card-shadow); color: white;">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: white; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                        ✔ Long-Term Authority
+                    </h3>
+                    <p style="font-size: 1rem; line-height: 1.65; color: rgba(255,255,255,0.9); font-weight: 400; margin: 0;">
+                        The external trust we build does not disappear overnight. Our link building strategies compound over time, giving your site a stable foundation that keeps paying off.
+                    </p>
+                </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="sticky-card">
-                <h3 style="font-size: var(--h3-size); font-weight: 700; color: var(--teal); margin-bottom: 12px;">✓ Competition-Aware Targeting</h3>
-                <p style="font-size: var(--p-size); line-height: var(--p-line-height); color: var(--text-soft); margin: 0; font-weight: 400;">Every keyword decision is based on data and competition. I avoid outdated keyword research by using a smart keyword research system built on real Keyword trends, creating a unique keyword strategy for better targeting. We look for the "sweet spot".</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="sticky-card">
-                <h3 style="font-size: var(--h3-size); font-weight: 700; color: var(--teal); margin-bottom: 12px;">✓ Reports That Get Implemented</h3>
-                <p style="font-size: var(--p-size); line-height: var(--p-line-height); color: var(--text-soft); margin: 0; font-weight: 400;">Every detailed keyword report is built so your team can begin acting on it immediately. Your content writers, on-page SEO team, and developers each get a clear, structured section with exactly what they need to start. We provide a roadmap.</p>
-            </div>
-            
         </div>
     </div>
 </section>
+
 
     <!-- ─── 6. WHAT'S INCLUDED SECTION ──────────────────────── -->
    <section class="section-alt" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 24px;">
