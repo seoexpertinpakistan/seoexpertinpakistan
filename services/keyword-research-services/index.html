@@ -2950,24 +2950,35 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             width: 30px; height: 30px; border-radius: 50%; cursor: pointer; 
             font-size: 1.2rem; flex-shrink: 0; margin-left: 15px;
         }
-                /* Mobile adjustment to ensure text doesn't hit the edges */
-        @media (max-width: 600px) {
-            .v18-panel { 
-                padding: 20px 15px 40px 15px !important; 
-                position: relative !important; /* Absolute ko hata kar relative kiya */
-                height: auto !important; /* Fixed height ko auto kiya */
-                min-height: 100% !important;
-                flex-direction: column !important;
-                align-items: flex-start !important;
-            }
-            .v18-header h4 { font-size: 0.95rem !important; }
-            .v18-close {
-                position: absolute !important;
-                top: 10px !important;
-                right: 10px !important;
-                margin-left: 0 !important;
-            }
-        }
+                /* Mobile me original design aur scrollbar fix */
+@media (max-width: 600px) {
+    .v18-panel { 
+        padding: 15px !important; 
+        align-items: flex-start !important; /* Text ko upar se start karega taake scroll ho sake */
+    }
+    .v18-header h4 { font-size: 0.95rem !important; }
+    
+    /* Yeh line text ke andar scrollbar (slider) laagi gi */
+    .v18-panel p {
+        overflow-y: auto !important; 
+        max-height: 100% !important; 
+        padding-right: 8px !important; 
+        -webkit-overflow-scrolling: touch; /* iPhone par smooth scroll ke liye */
+    }
+    
+    /* Scrollbar ko design karna taake achha lage */
+    .v18-panel p::-webkit-scrollbar {
+        width: 4px;
+    }
+    .v18-panel p::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+    }
+    .v18-panel p::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.5);
+        border-radius: 10px;
+    }
+}
     </style>
     <div style="max-width: 800px; margin: 0 auto;">
         <div style="text-align: center; margin-bottom: 48px;">
