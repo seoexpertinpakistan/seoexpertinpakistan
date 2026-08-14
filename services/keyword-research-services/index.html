@@ -1963,40 +1963,34 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
                 justify-content: center !important;
             }
            /* HERO INFOGRAPHIC MOBILE FIX */
-@media (max-width: 950px) {
-    .hero-content {
-        align-items: center !important;
-        text-align: center !important;
-    }
-    .hero-btns {
-        justify-content: center !important;
-    }
-    .hero-grid > div:last-child {
-        height: auto !important; 
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-    }
-    .hero-grid > div:last-child > div {
-        max-width: 100% !important;
-        width: 95% !important;
-        height: 380px !important; 
-        padding: 16px !important;
-    }
-    
-    /* "best running shoes" text ko center aur fit karne ke liye */
-    .hero-grid > div:last-child > div > div:first-child {
-        justify-content: center !important; /* Search box ko center mein laya */
-    }
-    .hero-grid > div:last-child > div > div:first-child > div {
-        width: 150px !important; /* Text container ki width barha di */
-        max-width: 100% !important;
-        overflow: hidden !important; /* Text ko bahar jane se roka */
-    }
-    .hero-grid > div:last-child > div > div:first-child > div > span {
-        font-size: 0.85rem !important; /* Mobile ke liye text size thora kam kiya */
-    }
-}
+        @media (max-width: 950px) {
+            .hero-content {
+                align-items: center !important;
+                text-align: center !important;
+            }
+            .hero-btns {
+                justify-content: center !important;
+            }
+            .hero-grid > div:last-child {
+                height: 420px !important;
+                margin-top: 40px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .hero-grid > div:last-child > div {
+                max-width: 320px !important;
+                width: 95% !important;
+                height: 380px !important;
+                padding: 16px !important;
+                margin: 0 auto !important;
+            }
+            .hero-grid > div:last-child > div > div:last-child {
+                right: -5px !important;
+                top: -15px !important;
+                transform: scale(0.9);
+            }
+        }
     </style>
 
     <div style="max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;" class="hero-grid">
@@ -2112,19 +2106,28 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
         }
     }
             /* CORE BENEFITS CAROUSEL MOBILE FIX */
-@media (max-width: 768px) {
-    #carousel-track > div {
-        min-height: 450px !important; /* 320px se barha kar 450px kiya */
-        height: 450px !important;
-        padding: 20px 15px !important;
-    }
-    #carousel-track > div > div {
-        padding: 24px !important;
-        max-width: 100% !important;
-        height: 100% !important;
-        overflow-y: auto !important; /* Agar content lamba ho toh andar scroll ho */
-    }
-}
+        @media (max-width: 768px) {
+            #carousel-track > div {
+                min-height: 420px !important;
+                height: auto !important;
+                padding: 25px 15px !important;
+            }
+            #carousel-track > div > div {
+                padding: 20px !important;
+                max-width: 100% !important;
+            }
+            #carousel-track > div > div h3 {
+                font-size: 1.3rem !important;
+                margin-bottom: 12px !important;
+            }
+            #carousel-track > div > div p {
+                font-size: 0.95rem !important;
+                margin-bottom: 15px !important;
+            }
+            #carousel-track > div > div ul li {
+                font-size: 0.9rem !important;
+            }
+        }
 </style>
 
 <!-- CAROUSEL SECTION -->
