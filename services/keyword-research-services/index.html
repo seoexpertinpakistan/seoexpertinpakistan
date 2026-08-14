@@ -1962,18 +1962,40 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             .hero-btns {
                 justify-content: center !important;
             }
-            /* HERO INFOGRAPHIC MOBILE FIX */
-.hero-grid > div:last-child {
-    height: auto !important; /* Fixed height hata di */
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.hero-grid > div:last-child > div {
-    max-width: 100% !important;
-    width: 95% !important;
-    height: 380px !important; /* Mobile ke liye perfect height */
-    padding: 16px !important;
+           /* HERO INFOGRAPHIC MOBILE FIX */
+@media (max-width: 950px) {
+    .hero-content {
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .hero-btns {
+        justify-content: center !important;
+    }
+    .hero-grid > div:last-child {
+        height: auto !important; 
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-grid > div:last-child > div {
+        max-width: 100% !important;
+        width: 95% !important;
+        height: 380px !important; 
+        padding: 16px !important;
+    }
+    
+    /* "best running shoes" text ko center aur fit karne ke liye */
+    .hero-grid > div:last-child > div > div:first-child {
+        justify-content: center !important; /* Search box ko center mein laya */
+    }
+    .hero-grid > div:last-child > div > div:first-child > div {
+        width: 150px !important; /* Text container ki width barha di */
+        max-width: 100% !important;
+        overflow: hidden !important; /* Text ko bahar jane se roka */
+    }
+    .hero-grid > div:last-child > div > div:first-child > div > span {
+        font-size: 0.85rem !important; /* Mobile ke liye text size thora kam kiya */
+    }
 }
     </style>
 
@@ -2092,15 +2114,15 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             /* CORE BENEFITS CAROUSEL MOBILE FIX */
 @media (max-width: 768px) {
     #carousel-track > div {
-        min-height: 320px !important; /* 480px se kam kar ke normal kiya */
-        height: 320px !important;
+        min-height: 450px !important; /* 320px se barha kar 450px kiya */
+        height: 450px !important;
         padding: 20px 15px !important;
     }
     #carousel-track > div > div {
-        padding: 20px !important;
+        padding: 24px !important;
         max-width: 100% !important;
         height: 100% !important;
-        overflow-y: auto !important; /* Agar content lamba ho toh scroll ho */
+        overflow-y: auto !important; /* Agar content lamba ho toh andar scroll ho */
     }
 }
 </style>
