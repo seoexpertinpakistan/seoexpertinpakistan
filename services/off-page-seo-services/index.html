@@ -227,11 +227,10 @@
         /* Infographic Animations Added Below */
         @keyframes blink { 0% { opacity: 1; } 100% { opacity: 0.3; } }
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-
-        html {
+html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--nav-height);
-    overflow-x: hidden; /* Yeh line horizontal scroll ko stop karegi */
+    overflow-x: clip; /* CHANGED: clip is used instead of hidden to prevent sticky bugs */
     width: 100%;
 }
 
@@ -242,7 +241,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden; /* Yeh line body par bhi scroll stop karegi */
+    overflow-x: clip; /* CHANGED: clip is used instead of hidden to prevent sticky bugs */
     width: 100%;
     position: relative;
 }
@@ -333,9 +332,10 @@ body {
             box-shadow: 0 8px 24px rgba(212, 168, 67, 0.3);
         }
 
-        /* ─── HOVER LIFTS ────────────────────────── */
+            /* ─── HOVER LIFTS ────────────────────────── */
         .hover-lift {
-            transition: var(--transition);
+            /* CHANGED: Only animate transform, box-shadow, and border-color. Do not animate position/top */
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         }
         .hover-lift:hover {
             transform: translateY(-4px);
