@@ -1962,7 +1962,7 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             .hero-btns {
                 justify-content: center !important;
             }
-           /* HERO INFOGRAPHIC MOBILE FIX */
+         /* HERO INFOGRAPHIC MOBILE FIX */
         @media (max-width: 950px) {
             .hero-content {
                 align-items: center !important;
@@ -1972,7 +1972,7 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
                 justify-content: center !important;
             }
             .hero-grid > div:last-child {
-                height: 420px !important;
+                height: 440px !important;
                 margin-top: 40px !important;
                 display: flex !important;
                 justify-content: center !important;
@@ -1984,11 +1984,21 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
                 height: 380px !important;
                 padding: 16px !important;
                 margin: 0 auto !important;
+                margin-top: 20px !important;
             }
+            /* 100% Intent Match Badge ko adjust kiya */
             .hero-grid > div:last-child > div > div:last-child {
-                right: -5px !important;
-                top: -15px !important;
-                transform: scale(0.9);
+                right: -10px !important;
+                top: -35px !important;
+                transform: scale(0.85);
+            }
+            /* Search Bar ko Center kiya */
+            .hero-grid > div:last-child > div > div:first-child {
+                justify-content: center !important;
+            }
+            /* Text ka size thora adjust kiya */
+            .hero-grid > div:last-child > div > div:first-child span {
+                font-size: 13px !important;
             }
         }
     </style>
