@@ -1963,17 +1963,18 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
                 justify-content: center !important;
             }
             /* HERO INFOGRAPHIC MOBILE FIX */
-            .hero-grid > div:last-child {
-                height: 350px !important; /* Mobile ke liye perfect height */
-                margin-top: 30px;
-            }
-            .hero-grid > div:last-child > div {
-                max-width: 100% !important;
-                width: 90% !important;
-                height: 100% !important;
-                padding: 16px !important;
-            }
-        }
+.hero-grid > div:last-child {
+    height: auto !important; /* Fixed height hata di */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.hero-grid > div:last-child > div {
+    max-width: 100% !important;
+    width: 95% !important;
+    height: 380px !important; /* Mobile ke liye perfect height */
+    padding: 16px !important;
+}
     </style>
 
     <div style="max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;" class="hero-grid">
@@ -2089,17 +2090,19 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
         }
     }
             /* CORE BENEFITS CAROUSEL MOBILE FIX */
-        @media (max-width: 768px) {
-            #carousel-track > div {
-                min-height: auto !important; /* 480px ko hatane ke liye */
-                height: auto !important;
-                padding: 40px 15px !important;
-            }
-            #carousel-track > div > div {
-                padding: 24px !important;
-                max-width: 100% !important;
-            }
-        }
+@media (max-width: 768px) {
+    #carousel-track > div {
+        min-height: 320px !important; /* 480px se kam kar ke normal kiya */
+        height: 320px !important;
+        padding: 20px 15px !important;
+    }
+    #carousel-track > div > div {
+        padding: 20px !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        overflow-y: auto !important; /* Agar content lamba ho toh scroll ho */
+    }
+}
 </style>
 
 <!-- CAROUSEL SECTION -->
