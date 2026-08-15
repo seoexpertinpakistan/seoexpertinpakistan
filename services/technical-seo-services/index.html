@@ -217,8 +217,8 @@
 
         /* Global Structural Overrides to preserve transitions and animations */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
-body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
+            html { scroll-behavior: smooth; overflow-x: clip; max-width: 100%; }
+            body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: clip; max-width: 100%; }
 
         /* ─── HOVER EFFECTS & ANIMATIONS Helper classes ─── */
         .hover-lift {
@@ -1186,49 +1186,49 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
             <div id="v4-fan-wrapper" style="position: relative; width: 100%; max-width: 450px; height: 320px; transform-style: preserve-3d; margin-top: 10px; margin-bottom: 10px;">
                 
                 <!-- Card 1 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Website Technical Audit</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">We run a full website technical audit to uncover every crawl error, indexing gap, and performance issue affecting your visibility.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Core Web Vitals Optimization</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">We optimize Core Web Vitals by resolving Technical Issues using structured Core Web Vitals optimization combined with deep Technical SEO work to meet Google performance standards.</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Crawl Budget Management</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">Crawl Budget Management improves how search engines crawl your site. I use custom SEO strategies to fix technical issues and ensure pages are properly structured, working like a technical SEO consultant for better indexing.</p>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Schema Markup and Structured Data</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">Structured technical optimization through schema markup gives Google clear signals about your content and improves how your pages appear in search results.</p>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Canonical Tag Correction</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">Duplicate pages split ranking signals. The technical SEO specialist improves canonical setup so Google indexes the correct page version. This supports better seo technical optimization and cleaner crawl efficiency across the website.</p>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">Mobile Usability and HTTPS</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">Technical SEO includes full mobile usability checks and HTTPS configuration review because Google indexes mobile-first across all sites.</p>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
+                <div class="v4-fan-card" onclick="toggleCardFocus(this)" style="position: absolute; width: 100%; height: 100%; background: #ffffff; border: 1.5px solid var(--border, #e2e8f0); border-radius: var(--radius, 24px); padding: 28px; box-shadow: var(--card-shadow, 0 10px 30px rgba(0,0,0,0.05)); transition: transform 0.1s ease-out, opacity 0.3s ease, box-shadow 0.4s ease; transform-origin: bottom center; cursor: pointer; top: 0;">
                     <span class="v4-close-btn">×</span>
                     <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--accent, #0d7377); margin-bottom: 12px; margin-top: 0;">XML Sitemap and Robots.txt</h3>
                     <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light, #4b5563); margin: 0;">A proper sitemap and robots.txt guide Google to index the right pages and skip unnecessary ones, supporting a strong technical SEO foundation.</p>
