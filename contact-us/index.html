@@ -284,8 +284,10 @@
             .cta-button { padding: 10px 14px !important; }
         }
 
-        /* ============ PAGE ANIMATIONS & REVEALS ============ */
-        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+              /* ============ PAGE ANIMATIONS & REVEALS ============ */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; max-width: 100%; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
         #preloader.hidden { opacity:0; visibility:hidden; }
         @keyframes pulseScale { 0%,100% { transform:scale(1); } 50% { transform:scale(1.1); } }
         @keyframes loadProgress { 0% { transform:translateX(-100%); } 100% { transform:translateX(100%); } }
@@ -688,55 +690,97 @@
         </div>
     </section>
 
-    <!-- ─── CONTACT SECTION (PROVIDED EXACTLY AS IS) ─── -->
-    <div class="reveal">
-        <section style="padding: 100px 20px; background: #f0f4f8; font-family: 'Inter', sans-serif;" id="contact">
-            <div class="contact-flex" style="max-width: 1150px; margin: 0 auto; display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+ <!--<!-- ─── CONTACT SECTION ─── -->
+<section style="padding: 100px 20px; background: #f0f4f8; font-family: 'Inter', sans-serif;" id="contact">
+    <div class="contact-flex" style="max-width: 1150px; margin: 0 auto; display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+        
+        <!-- CONTENT: FLEX 0.8 -->
+        <div class="contact-content" style="flex: 0.8; min-width: 320px;">
+            <div style="display: inline-block; padding: 8px 16px; background: #0d7377; color: #fff; border-radius: 5px; font-size: 12px; font-weight: 700; margin-bottom: 20px; letter-spacing: 1px;">READY FOR GROWTH?</div>
+            <h2 style="color: #1a1a2e; font-size: 45px; font-weight: 800; line-height: 1.1; margin: 0 0 25px;">Start Your SEO <br><span style="color:#0d7377;">Success Today.</span></h2>
+            <p style="color: #555; font-size: 18px; line-height: 1.8;">Helping Pakistani and International Businesses Dominate Search Results for Over 10 Years.</p>
+            <div style="margin-top:40px; border-top:1px solid #cbd5e0; padding-top:30px;">
                 
-                <!-- CONTENT: FLEX 0.8 -->
-                <div class="contact-content" style="flex: 0.8; min-width: 320px;">
-                    <div style="display: inline-block; padding: 8px 16px; background: #0d7377; color: #fff; border-radius: 5px; font-size: 12px; font-weight: 700; margin-bottom: 20px; letter-spacing: 1px;">READY FOR GROWTH?</div>
-                    <h2 style="color: #1a1a2e; font-size: 45px; font-weight: 800; line-height: 1.1; margin: 0 0 25px;">Start Your SEO <br><span style="color:#0d7377;">Success Today.</span></h2>
-                    <p style="color: #555; font-size: 18px; line-height: 1.8;">Helping Pakistani and International Businesses Dominate Search Results for Over 10 Years.</p>
-                    <div style="margin-top:40px; border-top:1px solid #cbd5e0; padding-top:30px;">
-                        
-                        <!-- CLICK TO CALL -->
-                        <a href="tel:+923422436927" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
-                            <p style="font-weight:700; color:#1a1a2e; margin: 0; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.color='#0d7377'" onmouseout="this.style.color='#1a1a2e'">
-                                <span style="font-size: 20px;">📞</span> +92 342 2436927
-                            </p>
-                        </a>
+                <!-- CLICK TO CALL -->
+                <a href="tel:+923422436927" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+                    <p style="font-weight:700; color:#1a1a2e; margin: 0; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.color='#0d7377'" onmouseout="this.style.color='#1a1a2e'">
+                        <span style="font-size: 20px;">📞</span> +92 342 2436927
+                    </p>
+                </a>
 
-                        <!-- CLICK TO EMAIL -->
-                        <a href="mailto:contact@seoexpertinpakistan.com" style="text-decoration: none; color: inherit; display: block;">
-                            <p style="font-weight:700; color:#1a1a2e; margin: 0; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.color='#0d7377'" onmouseout="this.style.color='#1a1a2e'">
-                                <span style="font-size: 20px;">✉️</span> contact@seoexpertinpakistan.com
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- FORM: FLEX 1.2 -->
-                <div class="contact-form-wrap" style="flex: 1.2; min-width: 400px; background: #f0f4f8; padding: 50px; border-radius: 40px; box-shadow: 20px 20px 60px #cbd5e0, -20px -20px 60px #ffffff;">
-                    <form id="contactForm">
-                        <div style="margin-bottom: 20px;">
-                            <input type="text" id="name" name="name" placeholder="Your Name *" required style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; outline: none; font-family: inherit;">
-                        </div>
-                        <div style="margin-bottom: 20px;">
-                            <input type="email" id="email" name="email" placeholder="Email Address *" required style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; outline: none; font-family: inherit;">
-                        </div>
-                        <div style="margin-bottom: 30px;">
-                            <textarea id="message" name="message" placeholder="Tell me about your business goals..." style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; margin-bottom: 10px; height: 120px; outline: none; font-family: inherit; resize: none;"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="premium-button" style="width: 100%; padding: 22px; border-radius: 15px; border: none; background: #0d7377; color: white; font-weight: 800; font-size: 18px; cursor: pointer; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(13,115,119,0.2);">
-                            <span style="position: relative; z-index: 2;">SEND REQUEST →</span>
-                        </button>
-                    </form>
-                </div>
+                <!-- CLICK TO EMAIL -->
+                <a href="mailto:contact@seoexpertinpakistan.com" style="text-decoration: none; color: inherit; display: block;">
+                    <p style="font-weight:700; color:#1a1a2e; margin: 0; display: flex; align-items: center; gap: 10px; transition: 0.3s;" onmouseover="this.style.color='#0d7377'" onmouseout="this.style.color='#1a1a2e'">
+                        <span style="font-size: 20px;">✉️</span> contact@seoexpertinpakistan.com
+                    </p>
+                </a>
             </div>
-        </section>
+        </div>
+
+        <!-- FORM: FLEX 1.2 -->
+        <div class="contact-form-wrap" style="flex: 1.2; min-width: 400px; background: #f0f4f8; padding: 50px; border-radius: 40px; box-shadow: 20px 20px 60px #cbd5e0, -20px -20px 60px #ffffff;">
+            <form id="contactForm">
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="name" name="name" placeholder="Your Name *" required style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; outline: none; font-family: inherit;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <input type="email" id="email" name="email" placeholder="Email Address *" required style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; outline: none; font-family: inherit;">
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <textarea id="message" name="message" placeholder="Tell me about your business goals..." style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; margin-bottom: 10px; height: 120px; outline: none; font-family: inherit; resize: none;"></textarea>
+                </div>
+                
+                <button type="submit" class="premium-button" style="width: 100%; padding: 22px; border-radius: 15px; border: none; background: #0d7377; color: white; font-weight: 800; font-size: 18px; cursor: pointer; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(13,115,119,0.2);">
+                    <span style="position: relative; z-index: 2;">SEND REQUEST →</span>
+                </button>
+            </form>
+        </div>
     </div>
+
+    <style>
+        @keyframes shineSweep { 0% { left: -100%; } 20% { left: 100%; } 100% { left: 100%; } }
+        .premium-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 40%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transform: skewX(-25deg); animation: shineSweep 4s infinite; z-index: 1; }
+        .premium-button:hover { background: #095c5f !important; transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 40px rgba(13,115,119,0.4) !important; }
+        .premium-button:active { transform: translateY(-2px) scale(0.98); }
+
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) {
+            #contact {
+                padding: 60px 16px !important; /* Reduces outer padding to give more space */
+            }
+            .contact-flex {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+            .contact-content {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 320px constraint */
+                width: 100% !important;
+                text-align: center !important; /* Centers text for better mobile look */
+            }
+            .contact-content h2 {
+                font-size: 2rem !important; /* Shrinks the massive 45px font */
+                margin-bottom: 15px !important;
+            }
+            .contact-content p {
+                font-size: 1rem !important;
+            }
+            /* Center Phone and Email on mobile */
+            .contact-content > div:last-child > a > p {
+                justify-content: center !important;
+            }
+
+            .contact-form-wrap {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 400px constraint that caused scroll */
+                width: 100% !important;
+                padding: 24px !important; /* Reduces 50px padding so form fields aren't cramped */
+                border-radius: 20px !important;
+                box-shadow: 10px 10px 30px #cbd5e0, -10px -10px 30px #ffffff !important;
+            }
+        }
+    </style>
+</section>
 
     <!-- ─── FOOTER (PROVIDED EXACTLY AS IS) ─── -->
     <div class="reveal">
