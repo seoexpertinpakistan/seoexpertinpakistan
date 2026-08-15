@@ -136,9 +136,9 @@
             --font: 'Inter', system-ui, -apple-system, sans-serif;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: var(--font); background: #ffffff; color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
 
         @keyframes pulse-dot { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.8); opacity:0.5; } }
 
@@ -1677,8 +1677,7 @@
     </div>
 
    
-
-<!-- ─── CONTACT SECTION ─── -->
+<!--<!-- ─── CONTACT SECTION ─── -->
 <section style="padding: 100px 20px; background: #f0f4f8; font-family: 'Inter', sans-serif;" id="contact">
     <div class="contact-flex" style="max-width: 1150px; margin: 0 auto; display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
         
@@ -1730,6 +1729,43 @@
         .premium-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 40%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transform: skewX(-25deg); animation: shineSweep 4s infinite; z-index: 1; }
         .premium-button:hover { background: #095c5f !important; transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 40px rgba(13,115,119,0.4) !important; }
         .premium-button:active { transform: translateY(-2px) scale(0.98); }
+
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) {
+            #contact {
+                padding: 60px 16px !important; /* Reduces outer padding to give more space */
+            }
+            .contact-flex {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+            .contact-content {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 320px constraint */
+                width: 100% !important;
+                text-align: center !important; /* Centers text for better mobile look */
+            }
+            .contact-content h2 {
+                font-size: 2rem !important; /* Shrinks the massive 45px font */
+                margin-bottom: 15px !important;
+            }
+            .contact-content p {
+                font-size: 1rem !important;
+            }
+            /* Center Phone and Email on mobile */
+            .contact-content > div:last-child > a > p {
+                justify-content: center !important;
+            }
+
+            .contact-form-wrap {
+                flex: 1 1 100% !important;
+                min-width: 100% !important; /* Removes 400px constraint that caused scroll */
+                width: 100% !important;
+                padding: 24px !important; /* Reduces 50px padding so form fields aren't cramped */
+                border-radius: 20px !important;
+                box-shadow: 10px 10px 30px #cbd5e0, -10px -10px 30px #ffffff !important;
+            }
+        }
     </style>
 </section>
 
