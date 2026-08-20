@@ -56,14 +56,16 @@
         "addressCountry": "PK"
       },
       
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "128"
-      }
-    }
-    </script>
+       </script>
     <!-- ========================================== -->
+    
+    <!-- Remove index.html from URL (GitHub Pages Solution) -->
+    <script>
+      if (window.location.href.indexOf('index.html') > -1) {
+        var cleanUrl = window.location.href.replace(/\/index\.html/, '/');
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
