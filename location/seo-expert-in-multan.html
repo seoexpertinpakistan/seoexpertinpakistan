@@ -11,6 +11,10 @@
     <meta name="author" content="SEO Expert in Pakistan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://seoexpertinpakistan.com/location/seo-expert-in-multan" />
+
+        <!-- ─── FAVICON (YOUR CUSTOM SVG) ─── -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M 310 135 A 135 135 0 1 0 335 335' fill='none' stroke='%230B6B6D' stroke-width='34' stroke-linecap='round'/%3E%3Cline x1='335' y1='335' x2='415' y2='415' stroke='%230B6B6D' stroke-width='42' stroke-linecap='round'/%3E%3Crect x='160' y='310' width='28' height='52' rx='7' fill='%230B6B6D'/%3E%3Crect x='204' y='265' width='28' height='97' rx='7' fill='%230B6B6D'/%3E%3Crect x='248' y='235' width='28' height='127' rx='7' fill='%230B6B6D'/%3E%3Crect x='292' y='200' width='28' height='162' rx='7' fill='%230B6B6D'/%3E%3Cpath d='M 130 300 L 225 215 L 265 240 L 335 165' fill='none' stroke='%23E2A835' stroke-width='26' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M 390 120 L 325 142 L 365 182 Z' fill='%23E2A835' stroke='%23E2A835' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
+
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -52,14 +56,16 @@
         "addressCountry": "PK"
       },
       
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "128"
-      }
-    }
-    </script>
+       </script>
     <!-- ========================================== -->
+    
+    <!-- Remove index.html from URL (GitHub Pages Solution) -->
+    <script>
+      if (window.location.href.indexOf('index.html') > -1) {
+        var cleanUrl = window.location.href.replace(/\/index\.html/, '/');
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
