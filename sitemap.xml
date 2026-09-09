@@ -1,10 +1,11 @@
 <urlset xmlns="http://www.seoexpertinpakistan.com/sitemap">
-<!--      ==================== HOME PAGE ====================      -->
+<script src="chrome-extension://hoklmmgfnpapgjgcpechhaamimifchmp/frame_ant/frame_ant.js"/>
+<!--       ==================== HOME PAGE ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/</loc>
 <priority>1.00</priority>
 </url>
-<!--      ==================== MAIN CATEGORIES ====================      -->
+<!--       ==================== MAIN CATEGORIES ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/services</loc>
 <priority>0.90</priority>
@@ -21,7 +22,7 @@
 <loc>https://seoexpertinpakistan.com/blogs</loc>
 <priority>0.80</priority>
 </url>
-<!--      ==================== SEO SERVICES PAGES ====================      -->
+<!--       ==================== SEO SERVICES PAGES ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/services/on-page-seo-services/</loc>
 <priority>0.85</priority>
@@ -54,40 +55,40 @@
 <loc>https://seoexpertinpakistan.com/services/international-seo-services/</loc>
 <priority>0.85</priority>
 </url>
-<!--      ==================== LOCATION PAGES ====================      -->
+<!--       ==================== LOCATION PAGES ====================       -->
 <url>
-<loc>https://seoexpertinpakistan.com/location/multan-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-expert-in-multan/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/islamabad-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-service-in-islamabad/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/karachi-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-expert-in-karachi/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/lahore-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-expert-in-lahore/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/rawalpindi-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-services-in-rawalpindi/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/faisalabad-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-services-in-faisalabad/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/peshawar-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-services-in-peshawar/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/location/quetta-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/location/seo-services-in-quetta/</loc>
 <priority>0.80</priority>
 </url>
-<!--      ==================== INDUSTRY PAGES ====================      -->
+<!--       ==================== INDUSTRY PAGES ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/industries/shopify-seo-services/</loc>
 <priority>0.80</priority>
@@ -97,15 +98,15 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/industries/real-estate-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/industries/seo-services-for-real-estate/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/industries/healthcare-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/industries/seo-services-for-healthcare/</loc>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/industries/dental-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/industries/seo-services-for-dentists/</loc>
 <priority>0.80</priority>
 </url>
 <url>
@@ -117,7 +118,7 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://seoexpertinpakistan.com/industries/saas-seo-services/</loc>
+<loc>https://seoexpertinpakistan.com/industries/saas-seo-expert/</loc>
 <priority>0.80</priority>
 </url>
 <url>
@@ -148,7 +149,7 @@
 <loc>https://seoexpertinpakistan.com/industries/financial-seo-services/</loc>
 <priority>0.80</priority>
 </url>
-<!--      ==================== BLOG CATEGORIES ====================      -->
+<!--       ==================== BLOG CATEGORIES ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/blogs/on-page-seo/</loc>
 <priority>0.70</priority>
@@ -173,7 +174,7 @@
 <loc>https://seoexpertinpakistan.com/blogs/others/</loc>
 <priority>0.70</priority>
 </url>
-<!--      ==================== ABOUT & LEGAL PAGES ====================      -->
+<!--       ==================== ABOUT & LEGAL PAGES ====================       -->
 <url>
 <loc>https://seoexpertinpakistan.com/about-us/</loc>
 <priority>0.70</priority>
