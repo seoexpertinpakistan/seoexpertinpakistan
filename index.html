@@ -1639,12 +1639,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
-   <!-- FORM: FLEX 1.2 -->
+  <!-- FORM: FLEX 1.2 -->
         <div class="contact-form-wrap" style="flex: 1.2; min-width: 400px; background: #f0f4f8; padding: 50px; border-radius: 40px; box-shadow: 20px 20px 60px #cbd5e0, -20px -20px 60px #ffffff;">
             
-            <!-- Points to the PHP script we will create -->
-            <form action="send_mail.php" method="POST" id="contactForm">
+            <!-- Updated form tag to process emails automatically -->
+            <form action="https://formsubmit.co/contact@seoexpertinpakistan.com" method="POST" id="contactForm">
                 
+                <!-- Hidden inputs for better email formatting -->
+                <input type="hidden" name="_subject" value="New Lead from SEO Expert in Pakistan Website">
+                <input type="hidden" name="_captcha" value="false"> <!-- Disables the captcha for a smoother user experience -->
+                <!-- <input type="hidden" name="_next" value="https://seoexpertinpakistan.com/thank-you"> --> <!-- Optional: Uncomment and add your thank you page link here so they are redirected after sending -->
+
                 <div style="margin-bottom: 20px;">
                     <input type="text" id="name" name="name" placeholder="Your Name *" required style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: #f0f4f8; box-shadow: inset 6px 6px 12px #cbd5e0, inset -6px -6px 12px #ffffff; outline: none; font-family: inherit;">
                 </div>
